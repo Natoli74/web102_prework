@@ -2,7 +2,7 @@
 
 body {
     font-family: 'Cabin';
-    background-color: #758190;
+     background: linear-gradient(90deg, #244c6e 0%, #00f2fe 100%);
 }
 
 #tentacles {
@@ -11,7 +11,7 @@ body {
 
 .header {
     display: flex;
-    background: linear-gradient(90deg, #4facfe 0%, #00f2fe 100%);
+    background: linear-gradient(90deg, #112e47 0%, #00f2fe 100%);
     box-shadow: 0 2px 8px rgba(0,0,0,0.2);
     padding: 1rem 2rem;
     border-radius: 0 0 10px 10px;
