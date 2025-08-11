@@ -24,7 +24,7 @@ The following **optional** features are implemented:
 
 Here's a walkthrough of implemented features:
 
-<img src='https://i.imgur.com/Qc0bHur.gif' title='Video Walkthrough' width='600' alt='Video Walkthrough' />
+<img src='assets/web102_prework.gif' title='Video Walkthrough' width='600' alt='Video Walkthrough'/>
 
 <!-- Replace this with whatever GIF tool you used! -->
 GIF created with [Ezgit](https://ezgif.com/) 
@@ -40,7 +40,7 @@ GIF created with [Ezgit](https://ezgif.com/)
 
 ## License
 
-    Copyright [2025] [Natoli Tesgera]
+    Copyright [2025] [Codepath & Natoli Tesgera]
 
     Licensed under the Apache License, Version 2.0 (the "License");
     you may not use this file except in compliance with the License.
