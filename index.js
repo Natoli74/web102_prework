@@ -194,3 +194,21 @@ firstGameContainer.appendChild(firstGameElement)
 const secondGameElement = document.createElement('p')
 secondGameElement.innerHTML = `${secondGame.name}`
 secondGameContainer.appendChild(secondGameElement)
+
+const searchInput = document.getElementById("search-input");
+const searchBtn = document.getElementById("search-btn");
+
+searchBtn.addEventListener("click", () => {
+  const query = searchInput.value.toLowerCase().trim();
+
+  if (query === "") {
+    // If input empty, show all games
+    showAllGames();
+  } else {
+    const filteredGames = GAMES_JSON.filter(game =>
+      game.name.toLowerCase().includes(query)
+    );
+    deleteChildElements(gamesContainer);
+    addGamesToPage(filteredGames);
+  }
+});

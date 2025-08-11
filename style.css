@@ -11,8 +11,10 @@ body {
 
 .header {
     display: flex;
-    background-color: lightblue;
-    padding: 1%;
+    background: linear-gradient(90deg, #4facfe 0%, #00f2fe 100%);
+    box-shadow: 0 2px 8px rgba(0,0,0,0.2);
+    padding: 1rem 2rem;
+    border-radius: 0 0 10px 10px;
     align-items: center;
     margin-left: -10px;
     margin-right: -10px;
@@ -63,10 +65,25 @@ body {
     border-radius: 7px;
 }
 
+.game-img {
+  animation: revolveY 20s linear infinite;
+  transform-style: preserve-3d;
+  transition: transform 0.6s ease;
+  perspective: 800px;
+}
+
+
 .game-card:hover {
     cursor: pointer;
     box-shadow: 0 0 30px lightblue;
 }
+
+.game-card:hover .game-img {
+  animation: none;
+  transform: rotateY(0deg);
+  cursor: pointer;
+}
+
 
 #button-container {
     text-align: center;
@@ -78,4 +95,29 @@ button {
     padding: 1%;
     margin: 1%;
     border-radius: 7px;
+}
+
+button:hover {
+  background-color: #005f99;
+  color: white;
+  transition: background-color 0.3s ease;
+  cursor: pointer;
+}
+
+#search-input {
+  padding: 0.5rem;
+  font-size: 1rem;
+  border-radius: 6px;
+  border: 1px solid #ccc;
+  width: 200px;
+  margin-right: 0.5rem;
+}
+
+@keyframes revolveY {
+  from {
+    transform: rotateY(0deg);
+  }
+  to {
+    transform: rotateY(360deg);
+  }
 }
